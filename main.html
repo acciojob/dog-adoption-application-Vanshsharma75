@@ -3,43 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Example</title>
+    <title>Dog Adoption Form</title>
 </head>
 <body>
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name"><br><br>
 
-<form>
-    <!-- Name Field -->
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Name">
-    <br><br>
+        <!-- Phone Number Field -->
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Phone Number"><br><br>
 
-    <!-- Phone Number Field -->
-    <label for="phone">Phone Number:</label>
-    <input type="text" id="phone" name="phone" placeholder="Phone Number">
-    <br><br>
+        <!-- Address Field -->
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Address"><br><br>
 
-    <!-- Address Field -->
-    <label for="address">Address:</label>
-    <input type="text" id="address" name="address" placeholder="Address">
-    <br><br>
+        <!-- Lived with a Dog Before Checkbox -->
+        <label for="dog-experience">Have you ever lived with a Dog before?</label>
+        <input type="checkbox" id="dog-experience" name="dog-experience" value="Have you ever lived with a Dog before?"><br><br>
 
-    <!-- Checkbox for Dog Experience -->
-    <label for="dog_experience">Have you ever lived with a Dog before?</label>
-    <input type="checkbox" id="dog_experience" name="dog_experience" value="Have you ever lived with a Dog before?">
-    <br><br>
+        <!-- Preferred Breeds Multi-Select -->
+        <label for="preferred-breeds">Please select your preferred breeds:</label>
+        <select id="preferred-breeds" name="preferred-breeds" multiple size="3">
+            <option value="labrador">Labrador</option>
+            <option value="german-shepherd">German Shepherd</option>
+            <option value="golden-retriever">Golden Retriever</option>
+            <option value="bulldog">Bulldog</option>
+            <option value="poodle">Poodle</option>
+        </select><br><br>
 
-    <!-- Multi-select for Preferred Breeds -->
-    <label for="breeds">Please select your preferred breeds:</label>
-    <select id="breeds" name="breeds" multiple>
-        <option value="labrador">Labrador</option>
-        <option value="german_shepherd">German Shepherd</option>
-        <option value="golden_retriever">Golden Retriever</option>
-    </select>
-    <br><br>
-
-    <!-- Submit Button -->
-    <input type="submit" value="Submit">
-</form>
-
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
